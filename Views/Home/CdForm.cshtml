@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <title>New Album:</title>
+  </head>
+  <body>
+    <h1>Enter the details of the album you'd like to post:</h1>
+    <form action='/cds/list' method="post">
+      <div class='form-group'>
+        <label for='cdTitle'>Title:</label>
+        <input id='cdTitle' name='cdTitle' class='form-control' placeholder="Enter the album's title" type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='cdArtist'>Artist:</label>
+        <input id='cdArtist' name='cdArtist' class='form-control' placeholder="Enter the artist" type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='releaseYear'>Year released:</label>
+        <input id='releaseYear' name='releaseYear' class='form-control' placeholder="Enter the release year" type='text'>
+      </div>
+      <button type='submit' class='btn btn-success'>Go!</button>
+    </form>
+  </body>
+</html>
